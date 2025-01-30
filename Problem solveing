@@ -1,0 +1,222 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMuNH9wRoKC3PnPTK0x5O5M",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Shoriful-Shuvo/learn-Python/blob/main/Problem%20solveing\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Ans to the Ques no 1**"
+      ],
+      "metadata": {
+        "id": "8f2vPD72DSqY"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ePWoPt7RCzLb",
+        "outputId": "0f0b2382-1669-4190-b2f1-e13d0bb2b3de"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter name: Mango\n",
+            "Not Found\n",
+            "Taka only 20.0\n",
+            "Not Found\n",
+            "Not Found\n",
+            "Not Found\n"
+          ]
+        }
+      ],
+      "source": [
+        "Price_list = [\"01\",\"Banana\", 5.00, \"unit\", \"02\", \"Mango\", 20.00, \"kg\", \"03\", \"Apple\", 15.00, \"kg\", \"04\", \"Papaya\", 25.00, \"unit\", \"05\", \"Guava\", 15.00, \"kg\"]\n",
+        "item = input( 'Enter name: ')\n",
+        "for i in range ( 0, len(Price_list), 4):\n",
+        "  if (Price_list[i+1]) == item :\n",
+        "    print ('Taka only', Price_list[i+2])\n",
+        "  else:\n",
+        "    print('Not Found')"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Price_list = [\"01\",\"Banana\", 5.00, \"unit\", \"02\", \"Mango\", 20.00, \"kg\", \"03\", \"Apple\", 15.00, \"kg\", \"04\", \"Papaya\", 25.00, \"unit\", \"05\", \"Guava\", 15.00, \"kg\"]\n",
+        "item = input( 'Enter name: ')\n",
+        "found = 1\n",
+        "for i in range ( 0, len(Price_list), 4):\n",
+        "  if (Price_list[i+1]) == item :\n",
+        "    print ('Taka only', Price_list[i+2])\n",
+        "    found = 0\n",
+        "if found == 1:\n",
+        "  print('Not Found.')\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5zPk2Z2zC0_6",
+        "outputId": "38f7b5be-ea62-4a85-e3ab-8a8e043587a7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter name: Mango\n",
+            "Taka only 20.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Price_list = [\"01\",\"Banana\", 5.00, \"unit\", \"02\", \"Mango\", 20.00, \"kg\", \"03\", \"Apple\", 15.00, \"kg\", \"04\", \"Papaya\", 25.00, \"unit\", \"05\", \"Guava\", 15.00, \"kg\"]\n",
+        "item = input( 'Enter name: ')\n",
+        "for i in range ( 0, len(Price_list), 4):\n",
+        "  if (Price_list[i+1]) == item :\n",
+        "    print ('Taka only', Price_list[i+2])\n",
+        "  else:\n",
+        "    print('Not Found')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Gm4Cjd-qDIVH",
+        "outputId": "2fa78256-efc5-4706-ae95-280f8518da2b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter name: kaju\n",
+            "Not Found\n",
+            "Not Found\n",
+            "Not Found\n",
+            "Not Found\n",
+            "Not Found\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Price_list = [\"01\",\"Banana\", 5.00, \"unit\", \"02\", \"Mango\", 20.00, \"kg\", \"03\", \"Apple\", 15.00, \"kg\", \"04\", \"Papaya\", 25.00, \"unit\", \"05\", \"Guava\", 15.00, \"kg\"]\n",
+        "item = input( 'Enter name: ')\n",
+        "found = 0\n",
+        "for i in range ( 0, len(Price_list), 4):\n",
+        "  if (Price_list[i+1]) == item :\n",
+        "    print ('Taka only', Price_list[i+2])\n",
+        "    found = 1\n",
+        "if found == 0:\n",
+        "  print('Not Found.')\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yvDXrUOHDNkn",
+        "outputId": "c146d5ea-24c9-4560-850e-c60991ee8c7b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter name: kaju\n",
+            "Not Found.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "First when i give text input Mango into the first code  the 5 output came and 1 time it was mango's price but 4 time not found.\n",
+        "\n",
+        "secondly when i give text input Mango into the second code  the  output came and  it was  only mango's price .\n",
+        "\n",
+        "when i give text input kaju in the first code and kaju is not in the list but the output repeat 5 time not found.\n",
+        "\n",
+        "when i give text input kaju in the second code and kaju is not in the list but the output came only one not found.\n"
+      ],
+      "metadata": {
+        "id": "jij8tqpdDdtg"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Ans to the ques no 2**"
+      ],
+      "metadata": {
+        "id": "SiEpPRKajsjL"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "I can see the difference in output and code between two program.for the first code it shows multiple output for single input but second code show single output for single input. for first code i use if and else condition but for second code i use if and if condition.first code has an error but second code don't has an error."
+      ],
+      "metadata": {
+        "id": "lKsA7D1Kjp76"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Ans to the ques no 3**"
+      ],
+      "metadata": {
+        "id": "RF4Y9QZamc2S"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "The second program works better because it don't repeat the output.The not found issue solve when i use different condition for first code i use else condition and for second code i use if condition.but the problem not fully solved then i call a variable found before loop and call it inside loop also and give a if condition with it ."
+      ],
+      "metadata": {
+        "id": "GZZVsDZlmq2I"
+      }
+    }
+  ]
+}
